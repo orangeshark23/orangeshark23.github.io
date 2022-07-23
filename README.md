@@ -2,4 +2,5 @@
 https://orangeshark23.github.io/Untitled-1
 https://orangeshark23.github.io/teste1
 https://orangeshark23.github.io/index2.html
-http://orangeshark23.github.io/solarsistem.html
+https://orangeshark23.github.io/solarsistem.html
+https://orangeshark23.github.io/NaoSeiOQueFazer.html
