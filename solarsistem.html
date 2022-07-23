@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.2.0/aframe.min.js">
+        </script>
+    </head>
+    <body>
+        <assets>
+            <img id="space" src="space.jpg">
+            <img id="sun" src="sun.webp">
+            <img id="mercury" src="mercury.webp">
+            <img id="venus" src="venus.jpg">
+            <img id="earth" src="earth.jpg">
+            <img id="mars" src="mars.jpg">
+            <img id="jupiter" src="jupiter.jpg">
+            <img id="saturn" src="saturn.jpg">
+            <img id="uranus" src="uranus.jpg">
+            <img id="neptune" src="neptune.jpg">
+        </assets>
+        <a-scene>
+            <a-sky src="#space">
+            </a-sky>
+
+    <!--sun-->
+            <a-sphere scale="40 40 40" position="0 0 0" src="#sun"
+            light="type: point; int: 2" material="shader: flat">
+            </a-sphere>
+
+    <!--mercury-->
+            <a-entity position="0 0 0" animation="property: rotation.y; to: 360; dur: 5000; loop: true; easing: linear">
+                <a-text value="MERCURY" scale="10 10 10" position="0 10 -50"></a-text>
+                <a-sphere scale="3 3 3" position="0 0 -50" src="#mercury" animation="property: rotation; to: 0 360 0; dur: 5000; loop: true; easing: linear">
+                </a-sphere>
+            </a-entity>
+                
+            
+            
+    <!--venus-->
+            <a-entity position="0 0 0" animation="property: rotation.y; to: 360; dur: 7000; loop: true; easing: linear">
+            <a-text value="VENUS" scale="10 10 10" position="0 12 -70"></a-text>
+                <a-sphere scale="5 5 5" position="0 0 -70" src="#venus"
+            animation="property: rotation; to: 0 360 0; dur: 7000; loop: true; easing: linear">
+            </a-sphere>
+            </a-entity>
+
+    <!--earth-->
+            <a-entity position="0 0 0" animation="property: rotation.y; to: 360; dur: 9000; loop: true; easing: linear">
+            <a-text value="EARTH" scale="15 15 15" position="0 10 -95"></a-text>
+               <a-sphere scale="8 8 8" position="0 0 -95" src="#earth"
+            animation="property: rotation; to: 0 360 0; dur: 9000; loop: true; easing: linear">
+            </a-sphere>
+            </a-entity>
+
+    <!--mars-->
+            <a-entity position="0 0 0"animation="property: rotation.y; to: 360; dur: 13000; loop: true; easing: linear">
+            <a-text value="MARS" scale="20 20 20" position="0 10 -120"></a-text>
+                <a-sphere scale="5 5 5" position="0 0 -120" src="#mars"
+            animation="property: rotation; to: 0 360 0; dur: 3000; loop: true; easing: linear"></a-sphere>
+            </a-entity>
+
+    <!--jupiter-->
+            <a-entity position="0 0 0" animation="property: rotation.y; to: 360; dur: 17000; loop: true; easing: linear">
+                <a-text value="JUPITER" scale="25 25 25" position="0 40 -160"></a-text>
+                <a-sphere scale="30 30 30" position="0 0 -160" src="#jupiter"
+            animation="property: rotation; to: 0 360 0; dur: 20000; loop: true; easing: linear">
+            </a-sphere>
+            </a-entity>
+
+    <!--saturn-->
+            <a-entity position="0 0 0" animation="property: rotation.y; to: 360; dur: 22000; loop: true; easing: linear">
+                <a-text value="SATURN" scale="30 30 30" position="0 35 -250"></a-text>
+                <a-entity id="saturncontainer" position="0 0 -250"
+            animation="property: rotation; to: 0 360 0; dur: 17000; loop: true; easing: linear">
+                <a-sphere scale="25 25 25" position="0 0 0" src="#saturn">
+                </a-sphere>
+                <a-torus id="saturninnerring" color="#F6DE87" radius="7" rotation="90 90 0" scale="5 5 1"></a-torus>
+                <a-torus id="saturnouterring" color="#F6DE87" radius="9" rotation="90 90 0" scale="5 5 1"></a-torus>
+            </a-entity>
+            </a-entity>
+
+    <!--uranus-->
+            <a-entity position="0 0 0" animation="property: rotation.y; to: 360; dur: 26000; loop: true; easing: linear">
+                <a-text value="URANUS" scale="35 35 35" position="0 40 -330"></a-text>
+                <a-entity id="uranuscontainer" position="0 0 -330">
+                <a-sphere scale="20 20 20" position="0 0 0" src="#uranus"
+                 animation="property: rotation; to: 0 0 360; dur: 25000; loop: true; easing: linear">
+                </a-sphere>
+                <a-torus id="uranusring" color="#F6DE87" radius="6" scale="5 5 1" rotation="0 0 0"></a-torus>
+            </a-entity>
+            </a-entity>
+
+    <!--neptune-->
+            <a-entity position="0 0 0" animation="property: rotation.y; to: 360; dur: 32000; loop: true; easing: linear">
+                <a-text value="NEPTUNE" scale="40 40 40" position="0 40 -370"></a-text>
+                <a-sphere scale="15 15 15" position="0 0 -370" src="#neptune"
+            animation="property: rotation; to: 0 360 0; dur: 30000; loop: true; easing: linear">
+            </a-sphere>
+            </a-entity>
+        </a-scene>
+    </body>
+</html>
